@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import{BrowserRouter,Routes, Route} from "react-router-dom"
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/Navbar/Navbar"
+import Hero from "./components/Hero/Hero"
+import MasonryGrid from "./components/MasonryGrid/MasonryGrid"
+import Footer from "./components/Footer/Footer"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element= {<Home/>}/>
-      <Route path="/gallery" element= {<Gallery/>}/>
-      <Route path="/contact" element= {<Contact/>}/>
-    </Routes>
-    </BrowserRouter>
+   <>
+      <Navbar />
+      <main>
+        <Hero />
+        <MasonryGrid />
+      </main>
+      <Footer />
+    </>
   )
 }
 

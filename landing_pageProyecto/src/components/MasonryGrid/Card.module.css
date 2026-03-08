@@ -1,0 +1,102 @@
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  break-inside: avoid;
+  margin-bottom: 1.25rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.body {
+  padding: 1.25rem;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8f5e9;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.shortText {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.expandable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s ease;
+}
+
+.expandable.open {
+  grid-template-rows: 1fr;
+}
+
+.expandableInner {
+  overflow: hidden;
+}
+
+.longText {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.65;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.45rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font);
+  color: var(--fg);
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  background: #f0faf3;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+}
