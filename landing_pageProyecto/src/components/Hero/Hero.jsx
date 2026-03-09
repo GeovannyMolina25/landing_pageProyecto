@@ -6,37 +6,37 @@ export default function Hero() {
   const contentRef = useRef(null)
 
   useEffect(() => {
-    const handleScroll = () => {
-      const y = window.scrollY
-      if (bgRef.current)      bgRef.current.style.transform      = `translateY(${y * 0.35}px)`
-      if (contentRef.current) contentRef.current.style.transform = `translateY(${y * 0.15}px)`
-    }
-
-    let mouseX = 0, mouseY = 0
-    let curX   = 0, curY   = 0
+  
+    let mouseX = 0;
+    let mouseY = 0;
+    let curX   = 0; 
+    let curY   = 0;
     let rafId  = null
 
     const handleMouseMove = (e) => {
-      mouseX = (e.clientX / window.innerWidth  - 0.5) * 14
-      mouseY = (e.clientY / window.innerHeight - 0.5) * 10
+      mouseX = (e.clientX / window.innerWidth  - 0.5) * 20
+      mouseY = (e.clientY / window.innerHeight - 0.5) * 12
     }
 
     const animate = () => {
+      const scrollY = window.scrollY
+
+      if(bgRef.current){
+        bgRef.current.style.transform = `translateY(${scrollY * 0.45}px)`
+      }
       curX += (mouseX - curX) * 0.06
       curY += (mouseY - curY) * 0.06
       if (contentRef.current) {
         contentRef.current.style.transform =
-          `translateY(${window.scrollY * 0.15}px) translate(${curX * 0.4}px, ${curY * 0.4}px)`
+          `translateY(${window.scrollY * 0.15}px) translate(${curX}px, ${curY}px)`
       }
       rafId = requestAnimationFrame(animate)
     }
 
-    window.addEventListener('scroll',    handleScroll,    { passive: true })
     window.addEventListener('mousemove', handleMouseMove, { passive: true })
     rafId = requestAnimationFrame(animate)
 
     return () => {
-      window.removeEventListener('scroll',    handleScroll)
       window.removeEventListener('mousemove', handleMouseMove)
       cancelAnimationFrame(rafId)
     }
