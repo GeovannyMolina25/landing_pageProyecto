@@ -18,9 +18,9 @@
 - Extraele los documentos que tiene el proyecto.
 
 **Ubicacion del proyecto**
-Para poder ejecutar el proyecto debes abrir la carpeta **landin_pageProyecto** con cualquier IDE Que desees utilizar y ahi procedes abrir el terminarl y poner los siguientes comandos...
+ - Para poder ejecutar el proyecto debes abrir la carpeta **landin_pageProyecto** con cualquier IDE Que desees utilizar y ahi procedes abrir el terminarl y poner los siguientes comandos...
 
-``Terminal
+```bash
 
 npm install
 npm run dev
