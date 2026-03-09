@@ -48,7 +48,7 @@ export default function Hero() {
       <div className={styles.overlay}        aria-hidden="true" />
 
       <div ref={contentRef} className={styles.content}>
-        <span className={styles.eyebrow}>Desarrollador Frontend</span>
+        <span className={styles.eyebrow}>Desarrollador Full stack</span>
 
         <h1 className={styles.title}>
           Hola, soy<br />
@@ -56,7 +56,9 @@ export default function Hero() {
         </h1>
 
         <p className={styles.subtitle}>
-          Creo interfaces limpias y accesibles con React. Me importa el detalle y el código que se entiende.
+          Ingeniero de software, con experiencia en desarrollo y liderazgo en equipos de trabajo. He trabajado en proyectos de
+          aplicaciones web, móviles e inteligencia artificial, creando soluciones para
+          problemas del mundo real.
         </p>
 
         <div className={styles.ctas}>
@@ -64,7 +66,6 @@ export default function Hero() {
           <a href="#contacto"  className={styles.btnOutline}>Contactar</a>
         </div>
       </div>
-
       <div className={styles.scrollHint} aria-hidden="true">
         <span>scroll</span>
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

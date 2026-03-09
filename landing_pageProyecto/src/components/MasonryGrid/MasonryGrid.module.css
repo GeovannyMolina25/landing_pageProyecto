@@ -4,6 +4,7 @@
   margin: 0 auto;
 }
 
+
 .header {
   margin-bottom: 3rem;
 }
@@ -27,6 +28,32 @@
 .grid {
   columns: 3;
   column-gap: 1.25rem;
+}
+
+.btnVermas {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  margin-top: 40px;
+}
+
+.link {
+  align-items: center;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #054120, #7ab691);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.link:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(103, 231, 161, 0.6);
+  background: linear-gradient(135deg, #215c35, #57eea8);
 }
 
 @media (max-width: 1024px) {

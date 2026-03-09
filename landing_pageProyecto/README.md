@@ -1,15 +1,9 @@
-# Landing Page — Prueba Técnica Frontend
+## Inicial el proyecto
 
-## Cómo correr el proyecto
+## Se pone en el terminal estos comandos
 
-```bash
 npm install
 npm run dev
-```
-
-Abrir **http://localhost:5173**
-
----
 
 ## Estructura
 
@@ -39,25 +33,23 @@ src/
 
 ## Enfoque técnico
 
-Cada componente vive en su propia carpeta con su `.jsx` y su `.module.css`. Los CSS Modules evitan conflictos de nombres de clase entre componentes sin necesitar ninguna configuración extra.
+Cada componente tiene su archivo .jsx y .module.css 
+Siempre se evita que los nombres de los componentes sean diferetes para que no haya tipos de errores desde las rutas...
 
-El `index.css` solo contiene variables globales (`--accent`, `--border`, etc.) y el reset. Los estilos específicos de cada parte están en su propio módulo.
+Se utiliza una rquitectura limpia y modular donde el proyecto puede seguir avanzando acorde a los requerimeintos del usuario y cada uno de los componentes estan separados, en el idex se manda a llamar las tablas 
 
 ---
 
 ## Decisiones relevantes
 
-**Parallax sin librerías** — Se usa `addEventListener('scroll')` con `{ passive: true }` para no bloquear el hilo principal. `will-change: transform` mueve los elementos a la GPU anticipadamente.
+**Parallax sin librerías** — Se usa el metodo addEventListener('scroll') con passive true para no bloquear el hilo principal. 
 
-**Expandir tarjetas con `grid-template-rows`** — Animar de `0fr` a `1fr` es más preciso que `max-height` porque no requiere un valor fijo arbitrario. La transición siempre es fluida sin importar el tamaño del contenido.
-
-**Masonry con CSS `columns`** — Sin JavaScript ni librerías. El navegador distribuye las tarjetas solo. Para un grid estático es la solución más simple y eficiente.
+**Masonry con CSS columns`** — Sin JavaScript ni librerías. El navegador distribuye las tarjetas solo. Para un grid estático es la solución más simple y tambien es muy eficiente.
 
 ---
 
 ## Qué mejoraría con más tiempo
 
-- Agregar un video `.mp4` real en el Hero
-- Animaciones de entrada con `IntersectionObserver`
-- Migrar a TypeScript
-- Tests con Vitest + React Testing Library
+Una de las cosas seria migrar a typescript me parece que es una mejor opcion, tambien hacer el proceso de testin usando la misma tegnologia de vitest testing y react, ingresar nuevas tarjetas para ver los productos o proyectos.
+agregar nuevas paginas y rutas diferentes para cada uno de los linknav
+hacerle un poco mas dinamica a la pagina y con mejores estilos, hacer animaciones solo con javascript 
