@@ -22,13 +22,13 @@ export default function Hero() {
       const scrollY = window.scrollY
 
       if(bgRef.current){
-        bgRef.current.style.transform = `translateY(${scrollY * 0.45}px)`
+        bgRef.current.style.transform = `translateY(${scrollY * 0.7}px)`
       }
       curX += (mouseX - curX) * 0.06
       curY += (mouseY - curY) * 0.06
       if (contentRef.current) {
         contentRef.current.style.transform =
-          `translateY(${window.scrollY * 0.15}px) translate(${curX}px, ${curY}px)`
+          `translateY(${window.scrollY * 0.15}px) translate(${curX * 0}px, ${curY}px)`
       }
       rafId = requestAnimationFrame(animate)
     }
