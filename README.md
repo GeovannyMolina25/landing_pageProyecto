@@ -2,12 +2,32 @@
 
 ## Cómo correr el proyecto
 
-```bash
+## Desacargar el proyecto de GitHub
+**Con git clone**
+
+- Aqui tienes que abrir la carpeta del proyecto
+- Abrir un CMD y colocar git clone https://github.com/GeovannyMolina25/landing_pageProyecto.git
+- Se comenzara a intalar el proyecto.
+
+**tipo zip**
+
+- Ir al proyecto que se encuentra en https://github.com/GeovannyMolina25/landing_pageProyecto
+- Aplastar el boton de CODE (Un botton verde)
+- Seleccionar Downland Zip y se comenzara a descargar el proyecto.
+- Pon lo descargado en la carpeta que deseas que este el proyecto.
+- Extraele los documentos que tiene el proyecto.
+
+**Ubicacion del proyecto**
+Para poder ejecutar el proyecto debes abrir la carpeta **landin_pageProyecto** con cualquier IDE Que desees utilizar y ahi procedes abrir el terminarl y poner los siguientes comandos...
+
+``Terminal
+
 npm install
 npm run dev
+
 ```
 
-Despues se abre con este link **http://localhost:5173**
+Despues se abre con este link en cualquier navegador **http://localhost:5173**
 
 ---
 
