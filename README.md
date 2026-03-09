@@ -34,7 +34,9 @@ src/
 ── App.jsx
 ── main.jsx
 ── index.css
+## foto de estructura
 
+<img width="369" height="804" alt="image" src="https://github.com/user-attachments/assets/eaaae608-6b65-404f-b2a7-35ae44c67a0f" />
 
 ## Enfoque técnico
 
