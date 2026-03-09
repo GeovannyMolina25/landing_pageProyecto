@@ -44,7 +44,16 @@ export default function Hero() {
 
   return (
     <section id="inicio" className={styles.section} aria-label="Sección principal">
-      <div ref={bgRef} className={styles.bg} aria-hidden="true" />
+      <video
+  ref={bgRef}
+  className={styles.bg}
+  autoPlay
+  muted
+  loop
+  playsInline
+>
+  <source src="/Desarrollo1.mp4" type="video/mp4" />
+</video>
       <div className={styles.overlay}        aria-hidden="true" />
 
       <div ref={contentRef} className={styles.content}>

@@ -88,7 +88,7 @@ export default function MasonryGrid() {
           />
         ))}
       </div>
-      <div>
+      <div className='seccion'>
           <div className='btnVermas'>
           <a href="https://github.com/GeovannyMolina25?tab=repositories" className={styles.link}>Ver mas ...</a>
         </div>
